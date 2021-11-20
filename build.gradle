@@ -7,8 +7,8 @@ android {
 
     defaultConfig {
         applicationId "co.edu.upb.cicloApp"
-        minSdk 31
-        targetSdk 31
+        minSdk 29
+        targetSdk 29
         versionCode 1
         versionName "1.0"
 

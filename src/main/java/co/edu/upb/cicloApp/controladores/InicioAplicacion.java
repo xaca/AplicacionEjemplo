@@ -1,4 +1,4 @@
-package co.edu.upb.cicloApp;
+package co.edu.upb.cicloApp.controladores;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import co.edu.upb.cicloApp.R;
 import co.edu.upb.cicloApp.util.Datos;
 
 
@@ -31,8 +32,9 @@ public class InicioAplicacion extends AppCompatActivity {
                 //Toast.makeText(InicioAplicacion.this,"¡hizo click!",Toast.LENGTH_SHORT);
                 Intent siguiente = new Intent(InicioAplicacion.this,Login.class);
                 Log.i("upb","Mensaje para la universidad");
-                startActivity(siguiente);
                 dato.setNombre("Juan");
+                Toast.makeText(InicioAplicacion.this,""+dato.getNombre(),Toast.LENGTH_LONG);
+                startActivity(siguiente);
             }
 
         });
